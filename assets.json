@@ -1,0 +1,216 @@
+{
+  "style": "cel-shaded toon illustration, thick dark ink contour, flat theatrical stage lighting, carnival",
+  "palette": [
+    "#17121F",
+    "#241A31",
+    "#2E2140",
+    "#0E0A14",
+    "#7D42B5",
+    "#DA3D68",
+    "#EDBF4B",
+    "#36B5A8",
+    "#F6E9D9",
+    "#C3AED6"
+  ],
+  "notes": "One art style for the whole project, repeated word for word at the head of every prompt (rule F.1c). Every mechanical sprite declares its orientation in words (rule C.8); the symmetric ones say so explicitly so nothing gets mirrored by accident. Sprites are drawn on whatever backdrop the model likes because the pipeline cuts the background away (rule F.1b), so no prompt argues about background colour. chip_base, plate_panel, stage_floor and stage_drape are 9-sliced in their .meta, so their prompts ask for a flat centre and a uniform border that survives stretching. No prompt contains the app name, and no sprite carries lettering of any kind (hard rule 1).",
+  "assets": [
+    {
+      "name": "bg_main",
+      "type": "bg",
+      "transparent": false,
+      "target": "Assets/Art/Textures/_BASE/Backgrounds/BG_main.png",
+      "prompt": "cel-shaded toon illustration, thick dark ink contour, flat theatrical stage lighting, carnival, a night carnival theatre seen from the stalls, heavy plum velvet curtains parted to both sides, two violet spotlight beams crossing above an empty wooden stage floor, golden dust motes drifting in the light, deep plum darkness gathering at the edges, the centre of the frame kept calm and uncluttered as a safe area for menu controls, the lower 40 percent darkened and low contrast so buttons read over it, vertical 9:16 portrait composition, no text, no letters, no logos, no watermark, not a photo, not photorealistic"
+    },
+    {
+      "name": "bg_game",
+      "type": "bg",
+      "transparent": false,
+      "target": "Assets/Art/Textures/_BASE/Backgrounds/BG_game.png",
+      "prompt": "cel-shaded toon illustration, thick dark ink contour, flat theatrical stage lighting, carnival, the same theatre after the house lights drop, a dim empty stage floor with a closed dark velvet backdrop behind it, muted plum and deep violet throughout, a soft vignette in the corners, the whole centre deliberately low contrast and empty so gameplay pieces read on top of it, the upper third darkened so a HUD stays legible, vertical 9:16 portrait composition, no text, no letters, no logos, no watermark, not a photo, not photorealistic"
+    },
+    {
+      "name": "mask_blank",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/mask_blank.png",
+      "orientation": "front view, symmetric, facing the VIEWER straight on",
+      "prompt": "cel-shaded toon illustration, thick dark ink contour, flat theatrical stage lighting, carnival, one single blank plaster carnival mask, front view, symmetric, facing the viewer straight on, empty eye holes and no decoration at all, pale unpainted plaster, centred, whole subject in frame, isolated single subject, no other objects, no text, no letters, no logos, no watermark, not a photo, not photorealistic"
+    },
+    {
+      "name": "mask_hero",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/mask_hero.png",
+      "orientation": "front view, symmetric, facing the VIEWER straight on",
+      "prompt": "cel-shaded toon illustration, thick dark ink contour, flat theatrical stage lighting, carnival, one single ornate harlequin carnival mask, front view, symmetric, facing the viewer straight on, the left half deep violet and the right half burnished gold, a heavy dark ink outline around every edge, centred, whole subject in frame, isolated single subject, no other objects, no text, no letters, no logos, no watermark, not a photo, not photorealistic"
+    },
+    {
+      "name": "frag_eyes_grin",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/frag_eyes_grin.png",
+      "orientation": "front view, symmetric, facing the VIEWER straight on",
+      "prompt": "cel-shaded toon illustration, thick dark ink contour, flat theatrical stage lighting, carnival, one single carnival mask eye-piece fragment with a wide delighted grin cut into it, front view, symmetric, facing the viewer straight on, a broken ceramic shard shape, centred, whole subject in frame, isolated single subject, no other objects, no text, no letters, no logos, no watermark, not a photo, not photorealistic"
+    },
+    {
+      "name": "frag_eyes_scowl",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/frag_eyes_scowl.png",
+      "orientation": "front view, symmetric, facing the VIEWER straight on",
+      "prompt": "cel-shaded toon illustration, thick dark ink contour, flat theatrical stage lighting, carnival, one single carnival mask eye-piece fragment with sharp angry brows driving down to the nose, front view, symmetric, facing the viewer straight on, a broken ceramic shard shape, centred, whole subject in frame, isolated single subject, no other objects, no text, no letters, no logos, no watermark, not a photo, not photorealistic"
+    },
+    {
+      "name": "frag_eyes_weep",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/frag_eyes_weep.png",
+      "orientation": "front view, symmetric, facing the VIEWER straight on",
+      "prompt": "cel-shaded toon illustration, thick dark ink contour, flat theatrical stage lighting, carnival, one single carnival mask eye-piece fragment with sad drooping eyes and a single painted teardrop under each, front view, symmetric, facing the viewer straight on, a broken ceramic shard shape, centred, whole subject in frame, isolated single subject, no other objects, no text, no letters, no logos, no watermark, not a photo, not photorealistic"
+    },
+    {
+      "name": "frag_eyes_smirk",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/frag_eyes_smirk.png",
+      "orientation": "front view, deliberately ASYMMETRIC, the raised brow and lifted corner are on the RIGHT",
+      "prompt": "cel-shaded toon illustration, thick dark ink contour, flat theatrical stage lighting, carnival, one single carnival mask eye-piece fragment with one brow raised and a crooked smirk, front view, deliberately asymmetric, the raised brow and lifted corner on the right side, a broken ceramic shard shape, centred, whole subject in frame, isolated single subject, no other objects, no text, no letters, no logos, no watermark, not a photo, not photorealistic"
+    },
+    {
+      "name": "frag_eyes_calm",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/frag_eyes_calm.png",
+      "orientation": "front view, symmetric, facing the VIEWER straight on",
+      "prompt": "cel-shaded toon illustration, thick dark ink contour, flat theatrical stage lighting, carnival, one single carnival mask eye-piece fragment with calm level almond eyes and a serene brow, front view, symmetric, facing the viewer straight on, a broken ceramic shard shape, centred, whole subject in frame, isolated single subject, no other objects, no text, no letters, no logos, no watermark, not a photo, not photorealistic"
+    },
+    {
+      "name": "frag_plume_feather",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/frag_plume_feather.png",
+      "orientation": "side profile, the plume curves to the RIGHT",
+      "prompt": "cel-shaded toon illustration, thick dark ink contour, flat theatrical stage lighting, carnival, one single tall curved carnival feather plume, side profile, the plume curving to the right, banded violet and gold along its length, centred, whole subject in frame, isolated single subject, no other objects, no text, no letters, no logos, no watermark, not a photo, not photorealistic"
+    },
+    {
+      "name": "frag_plume_horns",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/frag_plume_horns.png",
+      "orientation": "front view, symmetric, both horns curving outward and UP",
+      "prompt": "cel-shaded toon illustration, thick dark ink contour, flat theatrical stage lighting, carnival, one single pair of small curved jester horns joined at the base, front view, symmetric, both horns curving outward and up, centred, whole subject in frame, isolated single subject, no other objects, no text, no letters, no logos, no watermark, not a photo, not photorealistic"
+    },
+    {
+      "name": "frag_plume_crown",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/frag_plume_crown.png",
+      "orientation": "front view, symmetric, points UP",
+      "prompt": "cel-shaded toon illustration, thick dark ink contour, flat theatrical stage lighting, carnival, one single small pointed jester crown with a tiny bell on each point, front view, symmetric, the points facing up, centred, whole subject in frame, isolated single subject, no other objects, no text, no letters, no logos, no watermark, not a photo, not photorealistic"
+    },
+    {
+      "name": "frag_plume_ribbon",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/frag_plume_ribbon.png",
+      "orientation": "side profile, both trailing tails stream to the RIGHT",
+      "prompt": "cel-shaded toon illustration, thick dark ink contour, flat theatrical stage lighting, carnival, one single tied silk ribbon with two long trailing tails, side profile, both tails streaming to the right, crimson silk with a gold edge, centred, whole subject in frame, isolated single subject, no other objects, no text, no letters, no logos, no watermark, not a photo, not photorealistic"
+    },
+    {
+      "name": "silhouette_mask",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/silhouette_mask.png",
+      "orientation": "front view, symmetric, facing the VIEWER straight on",
+      "prompt": "cel-shaded toon illustration, thick dark ink contour, flat theatrical stage lighting, carnival, one single flat solid silhouette of a carnival mask, front view, symmetric, facing the viewer straight on, one uniform fill colour with no facial detail and no shading inside it, a thick dark outline around the shape, centred, whole subject in frame, isolated single subject, no other objects, no text, no letters, no logos, no watermark, not a photo, not photorealistic"
+    },
+    {
+      "name": "spotlight_cone",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/spotlight_cone.png",
+      "orientation": "the narrow apex is at the TOP, the cone widens DOWNWARD",
+      "prompt": "cel-shaded toon illustration, flat theatrical stage lighting, carnival, one single soft theatrical spotlight beam cone, the narrow apex at the top and the cone widening downward to the bottom edge, a clean pale wedge of light fading out along its length, centred, whole subject in frame, isolated single subject, no other objects, no text, no letters, no logos, no watermark, not a photo, not photorealistic"
+    },
+    {
+      "name": "chip_base",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/chip_base.png",
+      "orientation": "front view, square, symmetric on both axes, 9-sliced so the border must be even on all four sides",
+      "prompt": "cel-shaded toon illustration, thick dark ink contour, flat theatrical stage lighting, carnival, one single square carnival plaque with a very thick dark border of even width on all four sides and a completely flat empty inner panel, front view, symmetric on both axes, slightly rounded corners, nothing drawn inside the panel, centred, whole subject in frame, isolated single subject, no other objects, no text, no letters, no logos, no watermark, not a photo, not photorealistic"
+    },
+    {
+      "name": "plate_panel",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/plate_panel.png",
+      "orientation": "front view, rectangular, symmetric on both axes, 9-sliced so the border must be even on all four sides",
+      "prompt": "cel-shaded toon illustration, thick dark ink contour, flat theatrical stage lighting, carnival, one single plain rectangular theatre sign panel with a very thick dark border of even width on all four sides and a completely flat empty interior, front view, symmetric on both axes, sharp corners, nothing drawn inside the panel, centred, whole subject in frame, isolated single subject, no other objects, no text, no letters, no logos, no watermark, not a photo, not photorealistic"
+    },
+    {
+      "name": "stage_floor",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/stage_floor.png",
+      "orientation": "a wide horizontal strip, the front lip of the stage along its BOTTOM edge",
+      "prompt": "cel-shaded toon illustration, thick dark ink contour, flat theatrical stage lighting, carnival, one single wide horizontal strip of dark polished stage boards seen head on, the front lip of the stage running along the bottom edge, the plank pattern even from left to right so the strip can be stretched, centred, whole subject in frame, isolated single subject, no other objects, no text, no letters, no logos, no watermark, not a photo, not photorealistic"
+    },
+    {
+      "name": "stage_drape",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/stage_drape.png",
+      "orientation": "a wide vertical panel, the folds hang straight DOWN",
+      "prompt": "cel-shaded toon illustration, thick dark ink contour, flat theatrical stage lighting, carnival, one single wide panel of heavy plum velvet backdrop drapery, the folds hanging straight down, the fold pattern even from left to right so the panel can be stretched, very low contrast so other art reads on top of it, centred, whole subject in frame, isolated single subject, no other objects, no text, no letters, no logos, no watermark, not a photo, not photorealistic"
+    },
+    {
+      "name": "burst_spark",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/burst_spark.png",
+      "orientation": "radial, symmetric in every direction from the centre",
+      "prompt": "cel-shaded toon illustration, thick dark ink contour, flat theatrical stage lighting, carnival, one single radial starburst of sharp light rays with small sparks between them, radial and symmetric in every direction from the centre, centred, whole subject in frame, isolated single subject, no other objects, no text, no letters, no logos, no watermark, not a photo, not photorealistic"
+    },
+    {
+      "name": "mark_brand",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/mark_brand.png",
+      "orientation": "front view, one shape split down the vertical centre line",
+      "prompt": "cel-shaded toon illustration, thick dark ink contour, flat theatrical stage lighting, carnival, one single abstract emblem of a carnival mask split down the vertical centre line, the left half a solid violet shape and the right half a solid gold shape, a very thick dark outline around the whole emblem, a pure geometric mark with no facial detail, centred, whole subject in frame, isolated single subject, no other objects, no text, no letters, no logos, no watermark, not a photo, not photorealistic"
+    },
+    {
+      "name": "dot_token",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/dot_token.png",
+      "orientation": "front view, a circle, symmetric in every direction",
+      "prompt": "cel-shaded toon illustration, thick dark ink contour, flat theatrical stage lighting, carnival, one single small round flat theatre token, a plain filled circle with a very thick dark rim, front view, symmetric in every direction, nothing drawn inside it, centred, whole subject in frame, isolated single subject, no other objects, no text, no letters, no logos, no watermark, not a photo, not photorealistic"
+    },
+    {
+      "name": "icon_back",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/icon_back.png",
+      "orientation": "the arrow points LEFT",
+      "prompt": "cel-shaded toon illustration, thick dark ink contour, flat theatrical stage lighting, carnival, one single thick chunky arrow pointing left, a solid flat shape with a very thick dark outline, centred, whole subject in frame, isolated single subject, no other objects, no text, no letters, no logos, no watermark, not a photo, not photorealistic"
+    },
+    {
+      "name": "icon_pause",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/icon_pause.png",
+      "orientation": "front view, symmetric, two upright bars side by side",
+      "prompt": "cel-shaded toon illustration, thick dark ink contour, flat theatrical stage lighting, carnival, one single pause symbol of two thick upright bars side by side, front view, symmetric, solid flat shapes with a very thick dark outline, centred, whole subject in frame, isolated single subject, no other objects, no text, no letters, no logos, no watermark, not a photo, not photorealistic"
+    },
+    {
+      "name": "icon_close",
+      "type": "sprite",
+      "transparent": true,
+      "target": "Assets/Art/Sprites/icon_close.png",
+      "orientation": "front view, symmetric on both diagonals",
+      "prompt": "cel-shaded toon illustration, thick dark ink contour, flat theatrical stage lighting, carnival, one single thick chunky close cross of two crossed bars, front view, symmetric on both diagonals, a solid flat shape with a very thick dark outline, centred, whole subject in frame, isolated single subject, no other objects, no text, no letters, no logos, no watermark, not a photo, not photorealistic"
+    }
+  ]
+}

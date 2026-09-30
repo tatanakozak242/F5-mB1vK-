@@ -1,0 +1,8 @@
+{
+  "outcome": "running",
+  "fix_type": "transient",
+  "resume_from": "test-ui",
+  "message": "Resuming from test-ui (transient)…",
+  "log": "projects/MyMask/.resume-20260925-154721.log",
+  "attempted_at_epoch": 1790344042
+}

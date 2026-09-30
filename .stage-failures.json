@@ -1,0 +1,46 @@
+{
+  "attempts": [
+    {
+      "stage": "test-ui",
+      "raw_stage": "screenshots",
+      "status": "NO_VALID_SCREENSHOTS",
+      "at_epoch": 1790327367
+    },
+    {
+      "stage": "test-ui",
+      "raw_stage": "screenshots",
+      "status": "NO_VALID_SCREENSHOTS",
+      "at_epoch": 1790329569
+    },
+    {
+      "stage": "test-ui",
+      "raw_stage": "screenshots",
+      "status": "NO_VALID_SCREENSHOTS",
+      "at_epoch": 1790334074
+    },
+    {
+      "stage": "test-ui",
+      "raw_stage": "screenshots",
+      "status": "PIPELINE_STARTED",
+      "at_epoch": 1790337993
+    },
+    {
+      "stage": "test-ui",
+      "raw_stage": "screenshots",
+      "status": "PIPELINE_INFRA_ERROR",
+      "at_epoch": 1790339106
+    },
+    {
+      "stage": "test-ui",
+      "raw_stage": "screenshots",
+      "status": "NO_VALID_SCREENSHOTS",
+      "at_epoch": 1790342320
+    },
+    {
+      "stage": "test-ui",
+      "raw_stage": "screenshots",
+      "status": "PIPELINE_STARTED",
+      "at_epoch": 1790344041
+    }
+  ]
+}

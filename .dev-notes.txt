@@ -1,0 +1,17 @@
+Developer Notes:
+*Білди під перший залив (патерн назви) {0000}_FIRST_UPLOAD.aab та {0000}_FIRST_UPLOAD.apk
+*Ні в якому разі не відправляти та ніяк не використовувати DO_NOT_SHIP_DEV_ONLY_LOGS_{0000}.apk
+
+ЛОГІКА ЗАКРИТТЯ/ВІДКРИТТЯ та ТЕСТУВАННЯ НА АПКАХ МАРКОВАНИХ uas/uab/uaa - дока - https://app.notion.com/p/Unity-BP-uas2-uab2-uaa2-for-Support-38f7736d838880739cbac820ca5722cc
+
+FB Class Name:
+com.facebook.unity.FBUnityDeepLinkingActivity
+
+Description:
+🎭 Step into a night carnival theatre where masked performers hold court under brilliant spotlights. Two beams of light sweep across the stage, briefly illuminating a complete carnival mask in stunning detail—every facet of its expression, its vivid color, its elaborate plumage. Then the stage plunges into darkness and the mask vanishes, leaving only an empty plaster mould and a scattered tray of fragments.
+
+👁️ You must rebuild the mask entirely from memory. The spotlight moment is all you have—study the revealed face, absorb its gaze and dominant hue, remember its distinctive crown or plume. Tap fragments to fit them against the empty mould; correct pieces snap satisfyingly into place while wrong guesses rattle the plaster and disappear. As performances progress, masks are revealed for shorter moments and the tray holds more decoys, demanding sharper memory and faster thinking.
+
+⏱️ Eight performances in a row challenge your visual memory against the clock. Three failed reconstructions and the theatre closes, the lights extinguish, and the show ends forever. Victory belongs entirely to what you remember.
+
+🎊 Perfect all eight masks and the crowd roars with applause, adding each to your theatre's collection and celebrating your flawless evening. Slip three times and the final curtain falls, the stage goes dark, and your unfinished masks remain as monuments to a night that might have been.

@@ -1,0 +1,12 @@
+{
+  "notes": "tapFrac is normalised SCREEN space. UI taps are computed from the real RectTransforms over the 1242x2688 canvas reference with the AspectRatioFitter correction baked in: SafeArea fills the capture screen, but its child AspecterSA is FitInParent at aspect 1242/2688 = 0.46205 while the Unity AVD is 1080x2400 = 0.45, so the UI layer is 1080 x 2337.4, letterboxed 31.3 px top and bottom, and a UI rect at fraction u of the panel lands at 0.013039 + u * 0.973917 of the screen measured from the bottom (tapFrac y is 1 minus that). WORLD taps need no correction: the camera fills the screen, vertical extent is always 10 units, and the tray plaques for performance 1 sit at world (-0.735, -2.27) and (+0.735, -2.27), i.e. x = 0.339 / 0.661 and y = 0.727 from the top on both aspects. Which plaque is correct is generated per seed, so a tray tap lands either as a fragment snapping into the cast (jade flash) or as a miss (crimson shake) - both are visible feedback in frame. The pause pop is the deterministic result card, reachable at any time.",
+  "steps": [
+    { "waitLoader": true, "shot": "01_MenuScreen" },
+    { "tapFrac": [0.500, 0.6948], "label": "PLAY", "waitLoader": true, "shot": "02_GameScreen_show" },
+    { "wait": 4, "shot": "03_GameScreen_recall" },
+    { "tapFrac": [0.339, 0.727], "label": "TRAY_R0C0", "wait": 2, "shot": "04_GameScreen_answer" },
+    { "tapFrac": [0.661, 0.727], "label": "TRAY_R0C1", "wait": 2, "shot": "05_GameScreen_progress" },
+    { "tapFrac": [0.897, 0.075], "label": "PAUSE", "wait": 2.5, "shot": "06_IntermissionPop" },
+    { "tapFrac": [0.500, 0.603], "label": "RESUME", "wait": 3, "shot": "07_GameScreen_resumed" }
+  ]
+}
